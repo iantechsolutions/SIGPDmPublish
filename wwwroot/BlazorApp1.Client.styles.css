@@ -1,11 +1,181 @@
 @import '_content/Blazored.Modal/Blazored.Modal.bundle.scp.css';
 
+/* /Pages/e_Producción/ReporteProduccion.razor.rz.scp.css */
+
+
+table[b-8a2junoxby], td[b-8a2junoxby], th[b-8a2junoxby] {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 16;
+    white-space: nowrap;
+    overflow: auto;
+
+}
+
+table tr td:first-child[b-8a2junoxby] {
+    width: 200px;
+    border-right: 1px solid #D6D6D6;
+}
+
+th[b-8a2junoxby] {
+    border-bottom: 1px solid #D6D6D6;
+}
+
+table tr:nth-child(odd)[b-8a2junoxby] {
+    background-color: #f2f2f2;
+}
+
+table thead tr:nth-child(odd)[b-8a2junoxby] {
+    background-color: transparent;
+}
+
+/* /Pages/h_Calendario/ReporteCalendar.razor.rz.scp.css */
+
+
+.semana[b-eombk12qga] {
+    border-right: double 6px solid black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width:14%;
+}
+
+
+/* General styles */
+.text[b-eombk12qga] {
+    overflow-wrap: break-word;
+    max-width: 255px;
+}
+
+.row[b-eombk12qga] {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.col[b-eombk12qga] {
+    padding-right: 5px;
+    padding-left: 5px;
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 16.5 % !important;
+    float: left;
+}
+
+.reporte[b-eombk12qga] {
+    margin-top: 10px;
+}
+
+/* Button styles */
+.btn[b-eombk12qga] {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+    .btn:focus[b-eombk12qga],
+    .btn:hover[b-eombk12qga] {
+        text-decoration: none;
+    }
+
+.btn-outline-info[b-eombk12qga] {
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+    .btn-outline-info:hover[b-eombk12qga] {
+        color: #fff;
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+    }
+
+/* Feather Icons */
+.feather[b-eombk12qga] {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/* Other styles */
+.font-size-15px[b-eombk12qga] {
+    font-size: 15px;
+}
+
+.no-outline[b-eombk12qga] {
+    outline: none;
+}
+
+.float-right[b-eombk12qga] {
+    float: right;
+}
+
+.height-100[b-eombk12qga] {
+    height: 100%;
+}
+
+
+.row[b-eombk12qga]::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.text-uppercase[b-eombk12qga] {
+    text-transform: uppercase;
+}
+
+.padding-4px[b-eombk12qga] {
+    padding: 4px;
+}
+
+/* Card styles */
+.rz-card[b-eombk12qga] {
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 3px;
+    padding: 6px;
+    background-color: #f4f4f4;
+    border-color: #d4d4d4;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 8%), 0 1px 10px rgb(0 0 0 / 4%);
+}
+.finde[b-eombk12qga] {
+    background-color: red;
+}
+/* DatePicker styles */
+.rz-datepicker[b-eombk12qga] {
+    display: inline-block;
+    width: 236px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-s8xsnq6cv2] {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin: 0px;
+    -webkit-print-color-adjust: exact;
 }
+body[b-s8xsnq6cv2] {
+    size: landscape;
+    margin: 0px;
+}
+
 
 main[b-s8xsnq6cv2] {
     flex: 1;
@@ -108,15 +278,15 @@ main[b-s8xsnq6cv2] {
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-aw7s1uks9t] {
-        padding-top: 1rem;
-    }
+.nav-item:first-of-type[b-aw7s1uks9t] {
+    padding-top: 1rem;
+}
+        
+.nav-item:last-of-type[b-aw7s1uks9t] {
+    padding-bottom: 1rem;
+}
 
-    .nav-item:last-of-type[b-aw7s1uks9t] {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item[b-aw7s1uks9t]  a {
+.nav-item[b-aw7s1uks9t]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -134,6 +304,7 @@ main[b-s8xsnq6cv2] {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
+
 
 @media (min-width: 641px) {
     .navbar-toggler[b-aw7s1uks9t] {
